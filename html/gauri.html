@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="gauri.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-utensils"></i><span>Let's <span style="color: red;">Eat</span></span>
+            </div>
+            <div class="search">
+                <i class="fas fa-search" id="search-icon"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <a href="#" class="menu-bar"> <i class="fa-solid fa-bars"></i></a>
+            </div>
+
+        </div>
+    </header>
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Search here...">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="side-bar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#dishes">Dishes</a></li>
+            <li><a href="#menu">Menu</a></li>
+
+            <li><a href="#discounts">Discounts</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+
+
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="container swiper mySwiper home" id="home">
+        <div class="box swiper-wrapper">
+            <div class="small-box swiper-slide">
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3bhaHI24fBO03gQhs9OaglmkZmYs0PB5TAA&usqp=CAU"
+                        alt="">
+
+                </div>
+                <div class="content">
+                    <span>Our Special Dish</span>
+                    <h1>Matan Kabab</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, maxime?</p>
+                    <button class="btn">Order Now</button>
+                </div>
+
+            </div>
+            <div class="small-box swiper-slide">
+                <div class="img">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </div>
+                <div class="content">
+                    <span>Our Special Dish</span>
+                    <h1>Healthy Food</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, maxime?</p>
+                    <button class="btn">Order Now</button>
+                </div>
+
+            </div>
+            <div class="small-box swiper-slide">
+                <div class="img">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/133/179/804/meat-greens-plate-white-background-wallpaper-preview.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <span>Our Special Dish</span>
+                    <h1>Fried Chicken</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, maxime?</p>
+                    <button class="btn">Order Now</button>
+                </div>
+
+            </div>
+            <div class="small-box swiper-slide">
+                <div class="img">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDQ8NDw8NDQ4NDQ0NDQ8NDQ8NDQ0NFREWFxURFhUYHSggGBolGxYVITMhJSkrLi4uFyE1ODMtNystLisBCgoKDg0OGxAQGzclHyUvKzcvNS8rLzUrLzcrLy0tLTUvMC0tLjg3Ky8tLTAuLS0rKy01Ky0tLS01LS8tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAADAAMBAQAAAAAAAAAAAAAAAQIDBAYFB//EADoQAAICAQMCBAMFBgUFAQAAAAABAgMRBBIhBTEGQVFhE3GBFCIykaEHI0JSsdEzYnLB8BYkgpLhFf/EABoBAQADAQEBAAAAAAAAAAAAAAABAwQCBQb/xAAmEQEAAgICAQMDBQAAAAAAAAAAAQIDERIhBDFBURQi8BMycYHB/9oADAMBAAIRAxEAPwD7WAAAgGACAYEhAAAAhgQEAAAAAAAAADAAAAAAGAgyBQychkCiiCkwGAZABgCABAMTAlohoyCaAxOIF4AAAYAIAAkAAASBDJlJLu0vmAxGGeqXks/PhGF3Sfnj5cEIbjaXfj5mN3R9c/I1lEpQAyu/2F8V+xKiUkEjex5Y8DSASbKyLAwGmPJIAXkZGR5CFATkaYDyUmTkYDyUmRgMgZMgTkaYFCDIAAhiYEgMQCGIAAAAkApNJZbwiLrlHjvL09PmaU5OTy+SBns1XlHj3fcwcvl8jjAyxiEsagWomWMSlADGolKJkUR4IEKI8FGO2+EFmUox+bwSleAweXqOv6aHeef9KyaVni2ldoyf5IjcHGXQ4DBy/wD1hBvCg232Wctin4xrj3jnD2va08PHb9SOdfkmNOowJnN6fxlppvHMX/m4PVq6tVLsxFok03hZIhdGXZpjZKFbhqRjbFkkZtxW4wqQ1IDOpFIwKRkTCFNAmCY2sgGSjH2KTAoBZAAAQAIAGAjFqLtvC/F/Qu2zas+b7Gh3YB3MkYhFGWMQFGJkURqJaQCSKwPBi1FuyLl3wRM6THbIeb1LrNNC+9JOX8q7nmdQ61JpxTUPLMfxfmzk9ZrqlLclmWW3KbzJP1yzPfyKx6NWLxptPb0+o+LrJZUMQXt3PEeutuntTlZKXZZPOwtVrKaYz2fHs2zkv4YpNtr3wn+Z7nVOo06Kbq0tUdySUpvluPvJ859uxnt5UceUy2fRzForEdtbX6CdUd07K0/5Vuf6nmRm5Yw857Y54MfXddPVbIVzjGxwUbHy8PPlg3eg+Hb6qmp3SuSblCK0zq2tpcbm8tcFdc/OenOXF+nTfuLbIUVqfLsuxGpfxeiX1Zo6xwqiq3ZtSwmoJOc5vl8vvlvyN3qlkYJ3WRk3S5V1QSy1Y0t8sryXKz65OZs1s8b4QrSk+MT2xcs8bmo5InLX5eZ+nkt3ENunClveYLvhvNkl6tY4+p0fRuofh3uUIvLWPTyPmeuv1rknPEIZX3aISsT92/P6nueHXqdXYoVQscKpfvrN8IRhHz793/c65WjuG3x/G97vqen6inF/CkrZJ8LnGPmitN4vhXJV6mMtO28J2Jup/wDl5f09zmug306S6dOZxeW82YlnPyS/oex1WMtVD4agoVdnuWZSfyXYUzXtqaz/AEtzeJxnXo7HS62q6KlCUWn2cZKUX9UZpxaPkfT+lazQ3St0zstgsuVUU05L/S3ify4fudj0nxtp3Z9n1Evs92UvhX5rfPbDkljPvg2Y80W6nqXn3rNZ1LqRpjkljcuUyDQ4ZEy1IwplJgbEZFpmvFmSLCGUlrAJlPkCUyskBkCwJyADKSEE3iLfsBp6ie6XsuERFCMkUBUYmWKJiZEA0ihIYAc/4u6gqaFltZkk8eSfH9j32fO/2p2P4Fsc4xS2vn/xFeX9krcPd4c/resKSbU0u6XOXk5/XdYrXGdz4Sw85f8Ac5ijXObUrm0sR2xXn7v29v8Abv2XQuivqGoqslXGiD/w5yio5iuU1H6PD90eVak7+59DWaYa7hl8O1yU52XRjVc5Q+BKc/8ADjju4o6zReGr7NR8eV1Srsrwkovc7E+O77Yye5Zp4V7Yp1b1hfEsjFyXywjX1XVFXJ1z2twjXODw3hvdmT9+M/U5vqOphktmvaJs8Hq3TY1amMaYxduMztcFV8P3k1+JG0leoZlZlLmXl93+7NfV+NdM5bLanZsxiTxGfzRWrveu07hpJSpqlKGZvG94aclyc3pHfaimaLzqJc14u1FlEVtkkt0O/aUZRbb598sweFuhWTd0HCF0bNtihN7Yx5TwvTLx6dju+s9C02oUbr4Rtiq87XLbW5rO5t/Vmj0/XU6a21vbCv4cHB7q20+VtWHlrlPn3OYxcY1M6W0rzpqvs1ratNcpOdXwJ0RUdkGq7VjCx2+8vn2wjc0WrrWmsSjCLiswU2nKx/zPHf8Aoc71zrULZxccSecbotZS9zyqoOV33pWSnJqNcoqtbHjjLbWOPzOK5Jr1+SqzZLYdRaO3rafX2a3WyqdUIurLVizH7qXEcef/ANOp6b1pN7JpyxxnPHD8/I5rTzsrunbBVqpNVz3RW52eUljlmeuiU+m6jTxtjLU6nVTantlF6etyWG/PG2L7cZlj1LsdtekrfqcebrWvzt63UPEsWpfC2ShBtSlF5x88HMdXlV1GO2Uo1aivPwLcN9/4JesX+hvafo3TNI/v3zlc44sxbzLPfMVxj6Iyb+mY2ZeZdnvzJfLjgfdFt8ndqY7V1x6e9+y3q1k9LPTX/j0tr07y84xFNc+aw1j2O0msM4Lw9TVVb8Sm2Eozn+9eUpSkko5lj+JJJfQ7+zyfrFHrYbxaryMlOM6QNMQy5WtMyRMSMkWEMqKRjTLQCs9SUy5djApAZgI3CA2CNR+B/MsVyzBgaCMsTGjJEDJEtERLQFIYkMBM4f8AaL0m2+EVUot2RnXJykoxjxlNv8zuDV6hpI3VSrlxuXDXeL8mcXryrMO6W42iXwXw34Os1V2dX+4Wkuri6ElJX1LDb35xtfb25PpOtuhpq98VGVkpd1yorskvoeVHo12l1FuqnZhVSinVsbVkJcSkpZ7efb1PanRCUYcZi8yXy75PMnlMa1qXqRaOUTM7hhpqtscJ2ZUZNYSWW1k8Dxhq2r514wtsMbe8u/HHlydvpoppLOIR4S8z59436g4a2UYRW/CjH2ior+5X5UTWka+f8l1XWWZrPw4y6x7t0c45/DxJep1XgzXfudRGUW3BQnFPOW3lPj6I416vdOcpKUJqa7RxmXy75+R6/RVOqvVtZUox2p8fj5x9eUcT1HbDjw2x5dS+j0ShHp1kVF4qVlijuk5Jyy28yfq2+eDhNNCNlsVPdOL9E+V/se94O096Wr+0y312V6eMHlSg879y+fKyevRo663ueMye6uOElt7Rb/I6tWZiP4ephy8OVflrS8HaOVMVJOM4vdGyMnum/SS7YPM6/wBArqSsqhsbmlNptxlHZjCXbul+Z1GhUpzecOMVlJPsbHVdJXOiUd3w96TUpcqM1ypezT5LZxRNGLyK857ntwvTabZWfDca1HC3b1KU1YsPDWcdvby9me9r9DZ8KbWFZGM5Vzjna3j8LXoch0DxHBZWql8O+Mv8ZfEl8bnmaSX3X5rGMdjo9Z4jr2LT6ffO22DcJWKe2KXebcuZJZX5ozxjivUsVa2i2tduX6J4k0epe3Uad1WwS3WQ3bGvdx/3R0n/AOdXbDdpLNPKTTSlP76jnzWM8o4+iimEXptMt+H+9sxvc35vKPR8HaJxV+pshKEK5yjRCX3ZzcVzL5en1LZnczxjp6vKYj1Y9JpLNJ1DSaCNkNRfq5Vq3bKUnV99fezw+298+UT7xP09EkvofO/2b+D7ar7er69f93c7I6Sp99Np5N/ea8pSTwl3S78tpfQmenhx8YednyzeeyGhFIuZzRaJRaCFItEpFoBs1X3Nix4Rq55AvIyMgBvDENAaNkcNoImzqK8rPmjWQGSLLRjRaYFZKJAChAAGl1bpteppnTZlKyEobovE45WMpnLvpup0qVcsWUwio1XRTltx23Ly+fY7QTK74otO/dbjyzTr2cfprbFnne1y0l/z1/Q47r3Td9lmrnmUYWzjcoPdKvnl8eh9T1fTK7E/xVS5e6p7Xl+3ZnJU+DNTp7rbKb67675OVtdqdUm/XzT/AEMPkePadajcNuLyK9z6S5PWaaNMK7IWRtqujmmzh5yspZOe6nbqK9ctPXW7VrIUtQSf3bO0pfLjL9MH0LUeGHCmNHwLq6q5ucY1L4ii222ljOFlvg8nqWvWly9li3R25lBqeI547e/6GO9eFu46d1tymNN7SxVNFiTypWRhBZ7tR5x7c/oelpafiJylxnEYrhKKz5I8Hw5rJayP2hxddVcnCmE+HNrvJry5yvc66pwbUpZjBR24fm+TTipEdy6tbXUMdNFdUZWykoxhzOT9DxL9fHWOSm3VWpOFcE8SlFPlv58cG31rqCti9PRF5m8ycYuWMdnj6HnaPoNsH+60uous2/jvj8OCb57vCEzNp69HUaiN29WlpOk0VXyc4xUHmO6XHZZTia+r6hTK/Fa21Q4g5RaU/VptfI6rQeDr3P4t861N8rLdnw16RS4X0PaXhXSva74vUuuSnFWcVxnhrKivZvu2Ppsl/bSu3k46z8vn9XR9TLFOhpW1tcxjGFUIee6XZHedA8NR00YzulG+5YawsVVv/Kn3fu/yR7sIqMVGKjGMViMYpRil7JAzXj8WtJ3PcsWTPa0ajqA2IMDwamckikhpFJACRaQootIBlISQrJYQGLUTMCCTyxpAMBgBvgAwA17qscrsbANAaSKRdlfp+RjAtMeScjTAoCWGQHkTDJOQHknINksJVkTkTkAbLbH+WP8A6oML0X5IYMjRs1INxIyQNiGGAEGClEaiEJwPBaiUogQolKJQ0gEkUkCRNlqXzAqUkjTssbYp2NiSAEi0hJFpAPADADcGIAGAAANZMM4+v5mYTA1tojJKHpx/T8jFJtd19VygKDJMZp9mUAZJZWA2gQDRW0MAQ0LBeBpAY8BgyNAkBG0aiWojSAlRHgvAYAlIeCsDwBOB4Hgid0V5gXtFKSXc1p6p+Rhbb7gZ7NT5IwcsEikgEkUkCRSQAkWhIYDAQwNsBIYDAAATExslgSyJMpksDBOCfl9VwzFiS7S/MzyMbAj7RJd45+XI466Pnx8+BMxyQG1HURfmjIrI+qPLlUvQj4fo5L6gexlDPG+8u0mHxbP5v0A9nA8Hi/aLPUPtFnqB7SHweJ8efqHxJvzYHtb4+qJd8V5nkLPqylED0ZayPlyYpaxvsjWUTIogOVkn5iUSkisATgeCsDASQ0hgAFIQwAZIAMZGQA3cjyQmVkCgJyMAYmMlgSyWUyZAYpEstkMDG0S0ZGiQMTiQ4mZolxAxOJO0zOItoGLaLYZsBgDEojUTJtHtAhRLUSkigEolJAUgFgeAAAGAAMBZFkBhkWRZAeRNkuRDmBe4DDvEB6qY8gADAAABMYASSwACGQxgBDFgAAnACAAwLAwATQsAAAkUAAAwABjAAAAABZDIgAMhkQAJyIcwACJTMcpgAGN2AAAf/9k="
+                        alt="">
+                </div>
+                <div class="content">
+                    <span>Our Special Dish</span>
+                    <h1>Spicy Pasta</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, maxime?</p>
+                    <button class="btn">Order Now</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="dishes" id="dishes">
+        <h1 class="heading">Our <span style="color:red;">Food Gallery</span>
+        </h1>
+        <div class="small-dishes">
+            <div class="box-con">
+
+                <img class="images" src="/s-img-1.jpg" alt="">
+                <div class="content2">
+                    <div class="burger"><img src="/s-1.png" alt=""></div>
+                    <span>Tasty Burger</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, explicabo!</p>
+                    <a href="/g-1.jpg"><button class="btn">View More</button></a>
+                </div>
+            </div>
+            <div class="box-con">
+
+                <img class="images" src="/s-img-2.jpg" alt="">
+                <div class="content2">
+                    <div class="burger"><img src="/s-2.png" alt=""></div>
+                    <span>Hot Pizza</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, explicabo!</p>
+                    <a href="/g-2.jpg"> <button class="btn">View More</button></a>
+                </div>
+            </div>
+            <div class="box-con">
+
+                <img class="images" src="/s-img-3.jpg" alt="">
+                <div class="content2">
+                    <div class="burger"><img src="/s-3.png" alt=""></div>
+                    <span>Ice Cream</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, explicabo!</p>
+                    <a href="/g-3.jpg"><button class="btn">View More</button></a>
+                </div>
+            </div>
+            <div class="box-con">
+
+                <img class="images" src="/s-img-4.jpg" alt="">
+                <div class="content2">
+                    <div class="burger"><img src="/s-4.png" alt=""></div>
+                    <span>Healthy Juices</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, explicabo!</p>
+                    <a href="/g-4.jpg"> <button class="btn">View More</button></a>
+                </div>
+            </div>
+            <div class="box-con">
+
+                <img class="images" src="/s-img-5.jpg" alt="">
+                <div class="content2">
+                    <div class="burger"><img src="/s-5.png" alt=""></div>
+                    <span> Chocalates</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, explicabo!</p>
+                    <a href="/g-5.jpg"><button class="btn">View More</button></a>
+                </div>
+            </div>
+            <div class="box-con">
+
+                <img class="images" src="/s-img-6.jpg" alt="">
+                <div class="content2">
+                    <div class="burger"><img src="/s-6.png" alt=""></div>
+                    <span>Tea/Coffee</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, explicabo!</p>
+                    <a href="/g-6.jpg"><button class="btn">View More</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="menu" id="menu">
+        <h1 class="heading2">Our <span style="color: red;">Menu</span></h1>
+        <hr>
+        <br>
+        <div class="menu-box">
+            <div class="small-menu-box">
+                <img src="/g-1.jpg" alt="">
+                <div class="content3">
+
+                    <h1 class="small-heading"> Tasty Burgers</h1>
+                    <div class="small-list">
+
+                        <ul>
+                            <li><input type="radio" name="" id=""><a href="#">Aloo Tikki</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Veg Burger</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Egg Burger</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Paneer Burger</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Chicken Burger</a></li>
+
+                        </ul>
+                    </div>
+                    <button class="btn">Add To Cart</button>
+
+                </div>
+            </div>
+            <div class="small-menu-box">
+
+                <div class="content3">
+
+                    <h1 class="small-heading">Sandwiches</h1>
+                    <div class="small-list">
+                        <ul>
+                            <li><input type="radio" name="" id=""><a href="#">Chicken Sandwich</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Cheese Sandwich</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Egg Sandwich</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Club Sandwich</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Grilled Sandwich</a></li>
+
+                        </ul>
+                    </div>
+                    <button class="btn">Add To Cart</button>
+
+                </div>
+                <img src="/g-2.jpg" alt="">
+            </div>
+            <div class="small-menu-box">
+                <img src="/g-3.jpg" alt="">
+                <div class="content3">
+
+                    <h1 class="small-heading">Spicy Rools</h1>
+                    <div class="small-list">
+                        <ul>
+                            <li><input type="radio" name="" id=""><a href="#">Simple Veg Roll</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Paneer Veg Roll</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Cheese Roll</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Vegetable Roll</a></li>
+
+                        </ul>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="small-menu-box">
+
+                <div class="content3">
+
+                    <h1 class="small-heading">Cup Cakes</h1>
+                    <div class="small-list">
+                        <ul>
+                            <li><input type="radio" name="" id=""><a href="#">Red Velvet Vixen</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Vanilla Sunshine</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Chocolate Surprise</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Peppermint Patty</a></li>
+
+                        </ul>
+                    </div>
+                    <button class="btn">Add To Cart</button>
+
+                </div>
+                <img src="/g-4.jpg" alt="">
+            </div>
+            <div class="small-menu-box">
+                <img src="/g-5.jpg" alt="">
+                <div class="content3">
+
+                    <h1 class="small-heading">Sweets</h1>
+                    <div class="small-list">
+                        <ul>
+                            <li><input type="radio" name="" id=""><a href="#">Kaaju Katli</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Gulab Jamun</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Rasgulla</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Pastries</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Modak</a></li>
+
+                        </ul>
+                        <button class="btn">Add To Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="small-menu-box">
+
+                <div class="content3">
+
+                    <h1 class="small-heading">Non-Veg</h1>
+                    <div class="small-list">
+                        <ul>
+                            <li><input type="radio" name="radio" id="radio"><a href="#">Tandoori Chicken</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Afgani Chicken</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Chicken Tikka</a></li>
+                            <li><input type="radio" name="" id=""><a href="#">Chicken Seekh Kabab</a></li>
+
+                        </ul>
+                    </div>
+                    <button class="btn">Add To Cart</button>
+                </div>
+                <img src="/g-6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="discounts" id="discounts">
+
+
+        <div class="discount-box">
+            <h1 class="heading4">Discounts & <span style="color: red;">Special Offers</span></h1>
+
+            <div class="content4">
+                <div class="gif"><img
+                        src="https://www.bdtask.com/blog/assets/plugins/ckfinder/core/connector/php/uploads/images/Restaurant%20Promotion%20with%20GIF.gif"
+                        alt="">
+                    <img src="https://i.pinimg.com/originals/af/00/c5/af00c50759a384d4f13206a0e1650f1d.gif" alt="">
+                    <img src="https://i.pinimg.com/originals/75/73/e8/7573e83f58a9d275e8d6f7e8f06d368d.gif" alt="">
+                </div>
+                <h3>Offer <span style="color: red;">!</span> Offer<span style="color: red;">!</span> Offer<span
+                        style="color: red;">!</span></h3>
+                <p>We are here to provide the best quality food in the country. We also provide you many offers and
+                    discounts on our special dishes.
+
+                </p>
+
+                <div class="update">
+                    <h4>To Get More Updates and Stay With Us.
+                        <br> write your email in the box ....
+                    </h4>
+                    <div id="input">
+                        <input type="email" name="email" id="email" placeholder="your Email here......" class="input">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reviews" id="reviews">
+        <h1 class="heading5">
+            Our <span style="color: red;">Customers Reviews</span>
+        </h1>
+        <hr>
+        <div class="small-review">
+            <div class="cus-box"><img src="/pic1.png" alt="">
+                <h3>John Karrey</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, accusantium! Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Sed, quae.</p>
+
+            </div>
+     <div class="cus-box"><img src="/pic2.png" alt="">
+                <h3>John Karrey</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, accusantium! Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quo, dignissimos.
+
+                </p>
+            </div>
+           <div class="cus-box"><img src="/pic3.png" alt="">
+                <h3>John Karrey</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, accusantium! Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Aliquam, tempore?</p>
+            </div>
+           </div>
+           </div>
+
+    <div class="order" id="order">
+        <h1 class="heading6">Order <span style="color: red;">Now</span></h1>
+        <br>
+        <div class="order-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLKFMi0XuHQVycgap1l-yUo0gC8c3ztZwJQ&usqp=CAU"
+                alt="">
+            <div class="form">
+                <form action="">
+                    <div class="text-input">
+                        <input type="text" name="" id="" placeholder="Full Name.." required>
+                        <input type="email" name="" id="" placeholder="Your Email.." required>
+                    </div>
+                    <div class="phone">
+                        <input type="number" name="" id="" placeholder="Your Number.." required>
+                        <input type="text" name="" id="" placeholder="Food Name" required>
+                    </div>
+                    <textarea placeholder="Address" name="" id="" cols="30" rows="10" required></textarea>
+                    <input type="submit" class="btn" placeholder="Submit Now">
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer class="contact" id="contact">
+        <div class="about" id="about">
+            <h1>why do you choose us??</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laudantium ad aut eum cumque non vel
+                repudiandae dolore molestias quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis
+                itaque quibusdam rem reiciendis minus suscipit. Deserunt reprehenderit delectus eum. Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Adipisci, cupiditate?</p>
+        </div>
+        <div class="icons2">
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+        <p>Created by <span>Gauri varshney</span> | All rights reserved</p>
+     </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="gauri.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1700,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
